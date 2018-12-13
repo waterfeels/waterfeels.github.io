@@ -22,12 +22,7 @@ p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; 
 
 span.s1 {font-kerning: none}
 
-/*img {
-   width: auto;
-   max-height: 100%;
-   border: 0;
-   padding: 0;
-}*/
+
 
 /* Style the header */
 .header {
@@ -87,11 +82,22 @@ span.s1 {font-kerning: none}
   grid-column-end: 4;
 }
 
+/** classes to determine the transition that happens when scrolling **/
+.content .scroll-transition-fade {
+    transition: transform 1s ease-in-out, opacity .8s ease-in-out;
+}
+
+.content .scroll-transition-fade.below-viewport {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+
 
 /**
  * Thumbnails
  */
-/*
+
 div[thumbnails] {
 	justify-content: flex-start;
 }
@@ -244,7 +250,7 @@ body.mobile .thumbnails .thumbnail:hover .title {
 
 body.mobile .thumbnails .thumbnail:hover .tags {
 	opacity: 1;
-} */
+} 
 </style>
 
 </head>
