@@ -56,25 +56,35 @@ img {
 }
 
 
-
-.grid-container {
+.wrapper {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: #cccccc;
+ /* grid-template-columns: 1fr 2fr 1fr;*/
+  grid-template-columns: repeat (3, 1fr);
+  grip-gap: 1em;
+  background-color: #ffffff;
   padding: 10px;
+  grid-auto-rows: minmax (100pc, auto);
 }
 
-.grid-container > div {
-  background-color: #e5ffe5(255, 255, 255, 0.8);
+.wrapper > div {
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 9.0px;
 }
 
+.wrapper > div:nth-child(odd){
+	background: #ddd;
+
+}
+
 .item1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+}
+.item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 
@@ -250,8 +260,8 @@ about / portfolio / cv / tal vez
 
 <h1>ideas for portfolio categories</h1>
 
- <div class="grid-container">
-   <div class="item1">wprds</div>
+ <div class="wrapper">
+   <div class="item1">lemon</div>
    <div class="item2"><img src="/art/20171122_121319.jpg" height="20px"></div>
    <div class="item3"><img src="/art/20181211_110802_003.jpg" height="20px"></div>  
    <div class="item4"><img src="/art/20181211_111315_001.jpg" height="20px"></div>
