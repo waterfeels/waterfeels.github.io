@@ -25,6 +25,8 @@ span.s1 {font-kerning: none}
 img {
    width: auto;
    max-height: 100%;
+   border: 0;
+   padding: 0;
 }
 
 /* Style the header */
@@ -57,7 +59,7 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: f1 f1 f1;
+  grid-template-columns: auto auto auto;
   grid-gap: 10px;
   background-color: #cccccc;
   padding: 10px;
@@ -76,7 +78,163 @@ img {
 }
 
 
+/**
+ * Thumbnails
+ */
+/*
+div[thumbnails] {
+	justify-content: flex-start;
+}
 
+[data-css-preset] .thumbnails {
+   	background-color: transparent/*!thumbnails_bgcolor*/;   
+}
+
+[data-css-preset] .thumbnails_width {
+    width: 100%/*!thumbnails_width*/;
+}
+
+[data-css-preset] [thumbnails-pad] {
+    padding: 0.75rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [thumbnails-gutter] {
+    margin: -1.5rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-pad] {
+    padding: 0.75rem/*!responsive_thumbnails_padding*/; 
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-gutter] {
+    margin: -1.5rem/*!responsive_thumbnails_padding*/; 
+}
+
+.thumbnails .thumbnail {
+	position: relative;
+}
+
+.thumbnails .thumbnail:after {
+    background: transparent;
+    border-radius: 0px;
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    bottom: 7rem;
+    left: 1rem;
+    z-index: -1;
+    content: '';
+}
+
+.thumbnails .thumbnail:hover:after {
+
+}
+
+.thumbnails .thumbnail .thumb_image img {
+	opacity: 1;
+    border-radius: 0px;
+}
+
+.thumbnails .thumbnail:hover .thumb_image img {
+	opacity: 1;
+}
+
+.thumbnails .thumb_image {
+	outline: 0px solid transparent;
+    outline-offset: 0px;
+}
+
+.thumbnails .title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #000;
+	font-family: "Neue Haas Grotesk", Icons /*!Persona*/;
+	font-style: normal;
+	line-height: 1.3;
+    letter-spacing: 0.01em;
+}
+
+.thumbnails .tags {
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+    margin-left: 0rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #000;
+	font-family: "Neue Haas Grotesk", Icons /*!Persona*/;
+	font-style: normal;
+	line-height: 1.3;
+    letter-spacing: 0.01em;
+}
+
+.thumbnails .tags a {
+    color: rgba(0, 85, 255, 1);
+    text-decoration: none;
+    font-style: oblique;
+}
+
+/**
+ * Thumbnail Hover
+ */
+
+.thumbnails .thumbnail > a {
+	position: relative;
+
+}
+
+.thumbnails .thumbnail .title {
+    background: transparent;
+    padding: 0.0rem 0.0rem 0.0rem 0.0rem;
+    margin: 0rem;
+    color: rgba(0, 85, 255, 1);
+    align-content: left;
+    display: left;
+    position: relative;
+    left: 0rem;
+    top: 0.5rem;
+    z-index: 0;
+    opacity: 0;
+}
+
+.thumbnails .title span {
+	margin: auto;
+	display: inline-block;
+}
+
+.thumbnails .thumbnail:hover .title {
+    opacity: 1;
+}
+
+body.mobile .thumbnails .thumbnail:hover .title {
+	opacity: 1;
+}
+
+.thumbnails .thumbnail .tags {
+    background: transparent;
+    padding: 0.0rem 0.0rem 0.0rem 0.0rem;
+    margin: 0rem;
+    color: rgba(0, 85, 255, 1);
+    align-content: left;
+    display: left;
+    position: relative;
+    left: 0rem;
+    top: 0.5rem;
+    z-index: 0;
+    opacity: 0;
+}
+
+.thumbnails .tags span {
+	margin: auto;
+	display: inline-block;
+}
+
+.thumbnails .thumbnail:hover .tags {
+    opacity: 1;
+}
+
+body.mobile .thumbnails .thumbnail:hover .tags {
+	opacity: 1;
+} */
 </style>
 
 </head>
@@ -94,13 +252,13 @@ about / portfolio / cv / tal vez
 
  <div class="grid-container">
    <div class="item1">wprds</div>
-   <div class="item2"><img src="/art/20171122_121319.jpg" height="50px"></div>
-   <div class="item3"><img src="/art/20181211_110802_003.jpg" height="200px"></div>  
-   <div class="item4"><img src="/art/20181211_111315_001.jpg" height="200px"></div>
-   <div class="item5"><img src="/art/20181211_111541_001.jpg" height="200px"></div>
-   <div class="item6"><img src="/art/20181211_111740_001.jpg" height="200px"></div>
-   <div class="item7"><img src="/art/20181211_111826_002.jpg" height="200px"></div>
-  <div class="item8"><img src="/art/20181211_112604_002.jpg" height="200px"></div>  
+   <div class="item2"><img src="/art/20171122_121319.jpg" height="20px"></div>
+   <div class="item3"><img src="/art/20181211_110802_003.jpg" height="20px"></div>  
+   <div class="item4"><img src="/art/20181211_111315_001.jpg" height="20px"></div>
+   <div class="item5"><img src="/art/20181211_111541_001.jpg" height="20px"></div>
+   <div class="item6"><img src="/art/20181211_111740_001.jpg" height="20px"></div>
+   <div class="item7"><img src="/art/20181211_111826_002.jpg" height="20px"></div>
+  <div class="item8"><img src="/art/20181211_112604_002.jpg" height="20px"></div>  
  </div>
 </body>
 
