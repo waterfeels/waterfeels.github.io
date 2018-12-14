@@ -1,0 +1,787 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<title></title>
+
+<meta name="Generator" content="Cocoa HTML Writer">
+
+<meta name="CocoaVersion" content="1504">
+
+<style type="text/css">
+
+/**
+ * Content
+ */
+
+body {
+	background-color: #e5ffe5;
+	color: #000;
+}
+
+a:active {
+	opacity: 0.7;
+}
+
+.page a.active {
+	opacity: .4;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+sub,
+sup {
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	top: 0.3em;
+}
+
+sup {
+	top: -0.4em;
+}
+
+s {
+	text-decoration: line-through;
+}
+
+img {
+	border: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0 0 0 2em;
+}
+
+hr {
+	background: rgba(0, 0, 0, 0.15);
+	border: 0;
+	height: 1px;
+	display: block;
+}
+
+.content img {
+	float: none;
+	margin-bottom: .5em;
+}
+
+.gallery_image_caption {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.85);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons/*!System*/;
+	font-style: normal;
+	line-height: 1.3;	
+}
+
+/**
+ * Loading Animation
+
+ */
+
+.loading[data-loading] {
+	position: fixed;
+	bottom: 8px; 
+    left: 8px;
+}
+
+/**
+ * Editor styles
+ */
+
+[data-predefined-style="true"] bodycopy {
+	font-size: 1.7rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons /*!System*/;
+	font-style: normal;
+	line-height: 1.3;
+}
+
+[data-predefined-style="true"] bodycopy a {
+    border-bottom: 0.075em solid rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.75);
+	padding-bottom: 0.1em;
+	text-decoration: none;
+}
+
+[data-predefined-style="true"] bodycopy a:hover {
+
+}
+
+bodycopy a.image-link,
+bodycopy a.icon-link,
+bodycopy a.image-link:hover,
+bodycopy a.icon-link:hover {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+[data-predefined-style="true"] h1 {
+	font-family: 'Garage Gothic', Icons /*!Persona*/;
+	font-style: normal;
+	font-weight: 900;
+	padding: 0;
+	margin: 0;
+	font-size: 7.8rem;
+	line-height: 0.9;
+	color: rgba(0, 0, 0, 0.75);
+	text-rendering: optimizeLegibility;
+}
+
+[data-predefined-style="true"] h1 a {
+    border-bottom: 0em solid rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.75);
+}
+
+[data-predefined-style="true"] h2 {
+	font-family: Quiosco, Icons /*!Persona*/;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 3rem;
+	line-height: 1.2;
+	text-rendering: optimizeLegibility;
+}
+
+[data-predefined-style="true"] h2 a {
+    border-bottom: 0em solid rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.85);
+}
+
+[data-predefined-style="true"] small {
+    background: #ff0;
+	display: inline-block;
+	font-size: 1.4rem;
+	line-height: 1.3;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons /*!System*/;
+	font-style: normal;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+[data-predefined-style="true"] small a {
+    border-bottom: 0em solid rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.75);
+}
+
+/**
+ * Breakpoints
+ */
+
+
+[data-css-preset] .page {
+    background-color: initial /*!page_bgcolor*/;
+}
+
+.mobile .page,
+[data-css-preset].mobile .page {
+	position: relative;
+	min-height: 10px;
+	max-width: 100%;
+	width: 100%;
+	background-color: transparent /*!page_bgcolor*/;
+}
+
+[data-css-preset] .container {
+	margin-left: auto /*!content_center*/;
+	margin-right: auto /*!content_center*/;
+	text-align: left /*!text_left*/;
+}
+
+[data-css-preset] body {
+	background-color: rgb(255, 255, 255) /*!body_bgcolor*/;
+}
+
+[data-css-preset] .container_width {
+	width: 90%/*!content_center*/;
+}
+
+[data-css-preset] .content_padding {
+	padding-top: 8rem /*!main_margin*/;
+	padding-bottom: 8rem /*!main_margin*/;
+	padding-left: 8rem /*!main_margin*/;
+	padding-right: 8rem /*!main_margin*/;
+}
+
+
+[data-css-preset] text-limit {
+	display: inline-block /*!text_width*/;
+	max-width: 66rem/*!text_width*/;
+}
+
+/**
+ * Thumbnails
+ */
+
+div[thumbnails] {
+	justify-content: flex-start;
+}
+
+[data-css-preset] .thumbnails {
+   	background-color: rgba(0, 0, 0, 0)/*!thumbnails_bgcolor*/;   
+}
+
+[data-css-preset] .thumbnails_width {
+    width: 95%/*!thumbnails_width*/;
+}
+
+[data-css-preset] [thumbnails-pad] {
+    padding: 2.95rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [thumbnails-gutter] {
+    margin: -5.9rem/*!thumbnails_padding*/;
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-pad] {
+    padding: 1.5rem/*!responsive_thumbnails_padding*/; 
+}
+
+[data-css-preset] [responsive-layout] [thumbnails-gutter] {
+    margin: -3rem/*!responsive_thumbnails_padding*/; 
+}
+
+.thumbnails .thumb_image {
+	outline: 1px solid rgba(0,0,0,.12);
+    outline-offset: -1px;
+}
+
+.thumbnails .title {
+    margin-top: 1.7rem;
+    margin-bottom: .3rem;
+    font-size: 1.7rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons /*!System*/;
+	font-style: normal;
+	line-height: 1.1;
+    text-align: left;
+}
+
+.thumbnails .tags {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.35);
+	font-family: Quiosco, Icons /*!Persona*/;
+	font-style: italic;
+	line-height: 1.2;
+    text-align: center;
+}
+
+.thumbnails .tags a {
+	border-bottom: 0;
+    color: rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+}
+
+.thumbnails .has_title .tags {
+	margin-top: 0rem;
+}
+
+/**
+ * Site Menu
+ */
+
+[data-css-preset] #site_menu_button {
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1;
+    font-size: 28px /*!site_menu_button*/;
+    padding: 6px;
+    line-height: 1;
+    background: rgba(33, 32, 46, 0);
+    position: fixed;
+    top: 2rem /*!site_menu_button*/;
+	right: 2rem /*!site_menu_button*/;
+}
+
+body.mobile #site_menu_button {
+	margin: -6px;
+    font-size: 34px;
+}
+
+#site_menu_button.custom_icon {
+	width: 40px;
+    height: auto;
+}
+
+#site_menu_button.active {
+	display: none;
+}
+
+/**
+ * Site Menu
+ */
+
+#site_menu {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	background: rgba(20, 20, 20, 0.95);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	padding: 20px 30px 90px 30px;
+	max-width: 400px;
+	min-width: 300px;
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+}
+
+body.mobile #site_menu {
+	width: 100%;
+}
+
+#site_menu .page-link a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+#site_menu .set-link > a {
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: bold;
+}
+
+#site_menu a:active {
+	opacity: .7;
+}
+
+#site_menu a.active {
+	opacity: .4;
+}
+
+#site_menu .close {
+	display: none;
+	color: rgba(255, 255, 255, 0.4);
+	line-height: .85em;
+	font-size: 45px;
+}
+
+body.mobile #site_menu .close {
+	display: block;
+	font-size: 50px;
+	line-height: 1em;
+}
+
+#site_menu .break {
+	height: 28px;
+}
+
+#site_menu .indent {
+	margin-left: 28px;
+}
+
+/*
+ * Shop Button
+ */
+
+[data-css-preset] #shop_button {
+	color: rgba(0, 0, 0, 0.75);
+    background: transparent;
+	font-size: 40px;
+    font-style: normal;
+	font-weight: 400;
+    line-height: 1;
+    position: fixed;
+	padding: 6px;
+	bottom: 3rem /*!shop_button*/;
+	left: 3rem /*!shop_button*/;
+}
+
+#shop_button.text {
+    font-family: Quiosco, Icons /*!Persona*/;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3rem;
+    padding: 0;
+    line-height: 1.2;
+}
+
+#shop_button.custom_icon {
+	width: 40px;
+    height: auto;
+}
+
+body.mobile #shop_button:not(.text) {
+	margin: -6px;
+    font-size: 46px;
+}
+
+/*
+ * Shop Product Widget
+ */
+
+.shop_product {
+    width: 100%;
+	max-width: 22rem;
+    position: relative;
+    display: block;
+}
+
+.shop_product .price {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	font-size: 1.7rem;
+    font-weight: bold;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.75);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.shop_product .dropdown {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+    font-size: 1.4rem;
+    display: inline-block;
+	width: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    background:  white url(http://static.cargocollective.com/assets/images/select-arrows.svg) no-repeat right;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    padding: .7rem 1rem;
+}
+
+.shop_product .button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons /*!System*/;
+	font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.75);
+    color: rgba(255,255,255,1);
+    flex: 0 0 50%;
+    text-align: left;
+    display: inline-block;
+	line-height: 1;
+    padding: .8rem 1rem .9rem;
+}
+
+
+
+/*
+ * Image Zoom
+ */
+
+.content img.image-zoom:active {
+	opacity: .7;
+}
+
+.image-zoom-background {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+
+/**
+ * Image Zoom Navigation Arrows 
+ */
+
+.image-zoom-navigation .left-arrow,
+.image-zoom-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 36px;
+    width: 36px;
+}
+
+.image-zoom-navigation .left-arrow .inner-color,
+.image-zoom-navigation .right-arrow .inner-color {
+    fill: #fff;
+}
+
+.image-zoom-navigation .left-arrow .outer-color,
+.image-zoom-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+.image-zoom-navigation .close-button {  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Change height/width together to scale */
+    width: 36px;
+    height: 36px;
+}
+
+.image-zoom-navigation .close-button .inner-color {
+    fill: #fff;
+}
+
+.image-zoom-navigation .close-button .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+/** 
+ * Image Gallery Navigation Arrows 
+ */
+ 
+.image-gallery-navigation .left-arrow,
+.image-gallery-navigation .right-arrow {
+    /* Change height/width together to scale */
+    height: 56px;
+    width: 56px;
+}
+
+.image-gallery-navigation .left-arrow .inner-color,
+.image-gallery-navigation .right-arrow .inner-color {
+    fill: #fff;
+}
+
+.image-gallery-navigation .left-arrow .outer-color,
+.image-gallery-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+/**
+ * Wallpaper Backdrop Navigation Arrows 
+ */
+
+.wallpaper-navigation .left-arrow,
+.wallpaper-navigation .right-arrow {
+   /* Change height/width together to scale */
+   width: 56px;
+   height: 56px;
+}
+
+.wallpaper-navigation .left-arrow .inner-color,
+.wallpaper-navigation .right-arrow .inner-color {
+   fill: #fff;
+}
+
+.wallpaper-navigation .left-arrow .outer-color,
+.wallpaper-navigation .right-arrow .outer-color {
+    fill: #000;
+    opacity: 0.2;
+}
+
+
+/**
+ * Feed
+ */
+
+.feed .content_container .page {
+    border-bottom: 0px dashed rgba(0, 0, 0, 0.2);
+}
+
+.feed .content_container .page_container:last-child .page {
+	border-bottom: 0;
+}
+
+
+
+/*
+ * Audio Player
+ */
+
+.audio-player {
+    max-width: 36rem;
+    height: 3.3rem;
+    outline: 1px solid rgba(0,0,0,0.15);
+    color: rgba(0, 0, 0, 0.6);
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons/*!System*/;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin: 1px 1px 1em 1px;
+}
+
+body.mobile .audio-player {
+    max-width: 100%;
+}
+
+.audio-player .separator {
+    width: 1px;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.audio-player .button {
+    background: transparent;
+    cursor: pointer;
+    fill: rgba(0, 0, 0, 0.85);
+}
+
+.audio-player .icon {
+    fill: rgba(0, 0, 0, 0.85);
+    padding: 30%;
+    width: 100%;
+    margin: auto;
+}
+
+.audio-player .buffer {
+    background: rgba(0,0,0,0.03);
+}
+
+.audio-player .progress {
+    background: rgba(0,0,0,0.1);
+}
+
+.audio-player .progress-indicator {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    width: 1px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    cursor: ew-resize;
+}
+
+.audio-player .note-icon {
+    height: 100%;
+    width: 3.8rem;
+    padding: 1rem;
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.audio-player .current-time {
+    padding-left: 1rem;
+}
+
+.audio-player .total-time {
+    padding-right: 1rem;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="header" id="myHeader">
+  <h2><font face="courier new">ana zim<br><br>
+about / portfolio / cv / tal vez
+  </font>
+ </h2>
+</div>
+
+
+<h1>ideas for portfolio categories</h1>
+
+ <div class="wrapper">
+   <div class="item1"><img src="/art/20171122_120135.jpg" height="200px"></div>
+   <div class="item2"><img src="/art/20171122_121319.jpg" height="200px"></div>
+   <div class="item3"><img src="/art/20181211_110802_003.jpg" height="200px"></div>  
+   <div class="item4"><img src="/art/20181211_111315_001.jpg" height="200px"></div>
+   <div class="item5"><img src="/art/20181211_111541_001.jpg" height="200px"></div>
+   <div class="item6"><img src="/art/20181211_111740_001.jpg" height="200px"></div>
+   <div class="item7"><img src="/art/20181211_111826_002.jpg" height="200px"></div>
+  <div class="item8"><img src="/art/20181211_112604_002.jpg" height="200px"></div>  
+ 
+ </div>
+</body>
+
+
+<p style="text-align:right;" class="p1"><span class="s1">
+......................................<br>
+digital<br>
+gifs of batter<br>
+event gifs
+<br><br>
+photography<br>
+series of dishes<br>
+cars
+<br><br>
+series?
+<br><br>
+drawing and painting<br>
+hawaii sad cards<br>
+sketches<br>
+gouache<br>
+screenprint
+<br><br>
+culinary arts
+
+
+</text></span></p>
+<p style="text-align:right;" class="p1"><span class="s1">
+digital<br>
+gifs of batter<br>
+event gifs
+<br><br>
+photography<br>
+series of dishes<br>
+cars
+<br><br>
+series?
+<br><br>
+drawing and painting<br>
+hawaii sad cards<br>
+sketches<br>
+gouache<br>
+screenprint
+<br><br>
+culinary arts<br>
+.......................................
+
+</text></span></p>
+<p style="text-align:right;" class="p1"><span class="s1">
+digital<br>
+gifs of batter<br>
+event gifs
+<br><br>
+photography<br>
+series of dishes<br>
+cars
+<br><br>
+series?
+<br><br>
+drawing and painting<br>
+hawaii sad cards<br>
+sketches<br>
+gouache<br>
+screenprint
+<br><br>
+culinary arts<br>
+.......................................
+
+</text></span></p>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+
+</html>
