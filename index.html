@@ -71,12 +71,12 @@ a:active {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  /*grid-template-columns: 1fr 2fr 1fr;*/
   grid-template-columns: repeat (3, 1fr);
   grid-gap: 1em;
   background-color: #fff;
   padding: 10px;
-  grid-auto-rows: minmax (75px, auto);
+  grid-auto-rows: repeat (auto-fit, minmax (75px, auto));
 }
 
 .wrapper > div {
@@ -117,8 +117,9 @@ a:active {
 
 
  <div class="wrapper">
+
+   <div class="item2"><img src="/art/20171122_121319.jpg" height="400px"></div>
    <div class="item1"><img src="/art/20171122_120135.jpg" height="200px"></div>
-   <div class="item2"><img src="/art/20171122_121319.jpg" height="200px"></div>
    <div class="item3"><img src="/art/20181211_112640_001.jpg" height="200px"></div>
    <div class="item4"><img src="/art/20181211_110802_003.jpg" height="200px"></div>  
    <div class="item5"><img src="/art/20181211_111315_001.jpg" height="200px"></div>
