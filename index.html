@@ -196,11 +196,14 @@ img {
 
  <div class="grid-container">
 
-   <div class="item1"><a href="/art/20171122_121319.jpg" data-lightbox="gallery"><img src="/art/20171122_121319.jpg" alt="hand" height="400px"></a></div>
+   <div class="item1"><a href="/art/20171122_121319.jpg" data-lightbox="gallery"><img src="/art/20171122_121319.jpg" alt="hand" height="400px"></a>x</div>
 
-	<div class="item2"><img id="myImg2" img src="/art/20171122_120135.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div>
-   		<div class="item3"><img id="myImg" img src="/art/20181211_112640_001.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div>
-  			<div class="item4"><img id="myImg" img src="/art/20181211_110802_003.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div>
+	<div class="item2"><div id="img01"><img id="myImg" img src="/art/20171122_120135.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div></div>
+   		
+<div class="item3"><img id="myImg" img src="/art/20181211_112640_001.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div>
+  			
+<div class="item4"><div id="img02"><img id="myImg" img src="/art/20181211_110802_003.jpg" alt="hand" height="400px" style="width:100%;max-width:300px"></div></div>
+
    <div class="item5"><img src="/art/20181211_111315_001.jpg" height="400px"></div>
    <div class="item6"><img src="/art/20181211_111541_001.jpg" height="400px"></div>
    <div class="item7"><img src="/art/20181211_111740_001.jpg" height="400px"></div>
@@ -307,6 +310,7 @@ var modal = document.getElementById('myModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
+var modalImg = document.getElementById("img02");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
